@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_binding" table="x_167023_rental_se_book" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Audio Cassette</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:01:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a4f6427db886300c6be560868961931</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:02:27</sys_updated_on>
+            <value>audio_cassette</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Audio CD</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>20</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:02:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad5f6427db886300c6be560868961939</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:02:51</sys_updated_on>
+            <value>audio_cd</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Board</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>30</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:06:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>30303c27db886300c6be560868961903</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:06:22</sys_updated_on>
+            <value>board</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Boxed Set</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>40</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:03:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28afe027db886300c6be5608689619ba</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:06:28</sys_updated_on>
+            <value>boxed_set</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CD-ROM</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>50</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:10:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a617c67db886300c6be560868961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:10:57</sys_updated_on>
+            <value>cd_rom</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hard Cover</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>60</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:04:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b6cfe8e3db886300c6be560868961906</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:07:03</sys_updated_on>
+            <value>hard_cover</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Library Binding</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>70</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 20:27:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5e20923dbc86300c6be5608689619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 20:27:26</sys_updated_on>
+            <value>library_binding</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>80</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:04:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>06ffe827db886300c6be5608689619de</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:07:20</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pack</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>90</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:11:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>43917467db886300c6be5608689619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:11:37</sys_updated_on>
+            <value>pack</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Padded Hard Cover</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>100</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:12:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91b130a7db886300c6be5608689619bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:12:04</sys_updated_on>
+            <value>padded_hard_cover</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Paper Back</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>110</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:12:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eec1f467db886300c6be5608689619d2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 20:26:22</sys_updated_on>
+            <value>paper_back</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spiral Bound</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>120</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:12:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1d17c67db886300c6be560868961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:12:39</sys_updated_on>
+            <value>spiral_bound</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Toy</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>130</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:13:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>abf1b0a7db886300c6be560868961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:13:18</sys_updated_on>
+            <value>toy</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_binding</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VHS</label>
+            <language>en</language>
+            <name>x_167023_rental_se_book</name>
+            <sequence>140</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:13:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>750230a7db886300c6be5608689619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:13:28</sys_updated_on>
+            <value>vhs</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_binding</element>
+            <name>x_167023_rental_se_book</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-26 19:01:28</sys_created_on>
+            <sys_id>d64f6427db886300c6be560868961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_binding</sys_name>
+            <sys_package display_value="Rental Services" source="x_167023_rental_se">b09a00afdb086300c6be5608689619f1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Rental Services">b09a00afdb086300c6be5608689619f1</sys_scope>
+            <sys_update_name>sys_choice_x_167023_rental_se_book_u_binding</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-26 19:01:28</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Book" max_length="40" name="x_167023_rental_se_book" type="collection">
+        <element label="Author" max_length="40" name="u_author" type="string"/>
+        <element choice="1" label="Binding" mandatory="true" max_length="40" name="u_binding" type="choice">
+            <choice>
+                <element label="Audio Cassette" sequence="10" value="audio_cassette"/>
+                <element label="Audio CD" sequence="20" value="audio_cd"/>
+                <element label="Board" sequence="30" value="board"/>
+                <element label="Boxed Set" sequence="40" value="boxed_set"/>
+                <element label="CD-ROM" sequence="50" value="cd_rom"/>
+                <element label="Hard Cover" sequence="60" value="hard_cover"/>
+                <element label="Library Binding" sequence="70" value="library_binding"/>
+                <element label="Other" sequence="80" value="other"/>
+                <element label="Pack" sequence="90" value="pack"/>
+                <element label="Padded Hard Cover" sequence="100" value="padded_hard_cover"/>
+                <element label="Paper Back" sequence="110" value="paper_back"/>
+                <element label="Spiral Bound" sequence="120" value="spiral_bound"/>
+                <element label="Toy" sequence="130" value="toy"/>
+                <element label="VHS" sequence="140" value="vhs"/>
+            </choice>
+        </element>
+        <element choice="1" label="Category" mandatory="true" max_length="40" name="u_category" type="choice">
+            <choice>
+                <element label="Action" sequence="10" value="action"/>
+                <element label="Adventure" sequence="20" value="adventure"/>
+                <element label="Biography" sequence="30" value="biography"/>
+                <element label="Cars" sequence="40" value="cars"/>
+                <element label="Children" sequence="50" value="children"/>
+                <element label="Computers" sequence="60" value="computers"/>
+                <element label="Crafts" sequence="70" value="crafts"/>
+                <element label="Culture" sequence="80" value="culture"/>
+                <element label="Family" sequence="90" value="family"/>
+                <element label="Games" sequence="100" value="games"/>
+                <element label="How to" sequence="110" value="how_to"/>
+                <element label="Literature" sequence="120" value="literature"/>
+                <element label="Psychology" sequence="130" value="psychology"/>
+            </choice>
+        </element>
+        <element label="Quantity" max_length="40" name="u_quantity" type="integer"/>
+        <element display="true" label="Title" mandatory="true" max_length="160" name="u_title" type="string"/>
+    </element>
+</database>
