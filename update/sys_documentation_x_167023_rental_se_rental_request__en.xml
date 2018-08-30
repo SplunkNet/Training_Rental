@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Rental Request" language="en" table="x_167023_rental_se_rental_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Rental Request</label>
+            <language>en</language>
+            <name>x_167023_rental_se_rental_request</name>
+            <plural>Rental Requests</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-30 13:50:44</sys_created_on>
+            <sys_id>e18e8434db102300c6be5608689619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Rental Request</sys_name>
+            <sys_package display_value="Rental Services" source="x_167023_rental_se">b09a00afdb086300c6be5608689619f1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Rental Services">b09a00afdb086300c6be5608689619f1</sys_scope>
+            <sys_update_name>sys_documentation_x_167023_rental_se_rental_request__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-30 13:50:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
