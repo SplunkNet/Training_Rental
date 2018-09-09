@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_formatter">
+    <sys_ui_formatter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <angular_module/>
+        <formatter>process_flow.xml</formatter>
+        <name>Process Flow</name>
+        <sys_class_name>sys_ui_formatter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-09 12:32:37</sys_created_on>
+        <sys_id>6a8c13bbdb5c2300c6be560868961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Process Flow</sys_name>
+        <sys_package display_value="Rental Services" source="x_167023_rental_se">b09a00afdb086300c6be5608689619f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Services">b09a00afdb086300c6be5608689619f1</sys_scope>
+        <sys_update_name>sys_ui_formatter_6a8c13bbdb5c2300c6be560868961961</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-09 12:32:37</sys_updated_on>
+        <table>x_167023_rental_se_rental_request</table>
+        <type>formatter</type>
+    </sys_ui_formatter>
+</record_update>
