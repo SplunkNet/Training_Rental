@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>true</client>
+        <comments>Show all of my books requested that are not rejected or returned</comments>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_style/>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Books Requested</name>
+        <onclick>displayBooks()</onclick>
+        <order>100</order>
+        <script><![CDATA[function displayBooks(){
+	try {
+		var callUtils = new GlideAjax('x_167023_rental_se.BookUtilis');
+		callUtils.addParam('sysparm_name', 'listOfRequests');
+		callUtils.getXMLAnswer(showRequests);
+	}
+	catch (err) {
+		g_form.addErrorMessage(err);
+	}
+	
+	function showRequests(answer) {
+		//alert('Hello');
+		var response =  JSON.parse(answer); //answer.evalJSON();
+		var message = '<h1>Your Book Requests</h1><hr/>';
+		//alert(response[0].book + '!');
+		
+		for(var i = 0; i < response.length; i++) {
+			message += response[i].number + ' - ' + response[i].book + ' - ' + response[i].author + ' - ' + response[i].assigned_to + ' - ' + response[i].work_end + '</br>';
+		}
+		
+		var displayWindow = g_navigation.openPopup('about:blank', '_self');
+        displayWindow.document.write('<p>' + message + '</p>');
+	}
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-13 18:46:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d93d951db602300c6be5608689619d6</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Books Requested</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Rental Services" source="x_167023_rental_se">b09a00afdb086300c6be5608689619f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Services">b09a00afdb086300c6be5608689619f1</sys_scope>
+        <sys_update_name>sys_ui_action_3d93d951db602300c6be5608689619d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-13 20:20:41</sys_updated_on>
+        <table>x_167023_rental_se_rental_request</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>
