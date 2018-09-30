@@ -22,6 +22,7 @@
    var g_dateCheck = new GlideAjax('x_167023_rental_se.BookUtilis');
 	g_dateCheck.addParam('sysparm_name','dateInFuture');
 	g_dateCheck.addParam('sysparm_requested_from', newValue);
+	g_dateCheck.addParam('sysparm_requested_to', g_form.getValue('work_end'));
 	g_dateCheck.getXML(checkVal);
 		
 }
@@ -35,7 +36,7 @@ function checkVal(response) {
 		
 	} else if(answer == 'true') {
 		g_form.clearValue('work_start');
-		g_form.showFieldMsg('work_start', "Dates in the past are not allowed. Please select a future date", 'error');
+		g_form.showFieldMsg('work_start', "Dates in the past as well as after the reserved to are not allowed. Please select a future date and remember that it needs to be before reserved to", 'error');
 
 	}
 }]]></script>
@@ -45,7 +46,7 @@ function checkVal(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>138c660ddb9c2300c6be5608689619b0</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Check Reserved from date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Rental Services" source="x_167023_rental_se">b09a00afdb086300c6be5608689619f1</sys_package>
@@ -53,7 +54,7 @@ function checkVal(response) {
         <sys_scope display_value="Rental Services">b09a00afdb086300c6be5608689619f1</sys_scope>
         <sys_update_name>sys_script_client_138c660ddb9c2300c6be5608689619b0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-09-01 11:16:45</sys_updated_on>
+        <sys_updated_on>2018-09-30 15:25:00</sys_updated_on>
         <table>x_167023_rental_se_rental_request</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

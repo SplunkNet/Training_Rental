@@ -8,25 +8,37 @@
         <field>u_book</field>
         <global>true</global>
         <messages/>
-        <name>Custom - Get Author</name>
+        <name>Custom - Get Boook Data</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-   if (isLoading || newValue === '') {
+   if (isLoading) {
       return;
+   } else if (newValue === '') {
+	   g_form.clearMessages();
+	   return;
    }
 	
 	var gaReq = new GlideAjax('x_167023_rental_se.BookUtilis');
-	gaReq.addParam('sysparm_name', 'getAuthor');
+	gaReq.addParam('sysparm_name', 'getBookData');
 	gaReq.addParam('sysparm_book', newValue);
 	gaReq.getXML(setAuthor);
 	
 	function setAuthor(response){
 		var answer = response.responseXML.documentElement.getAttribute('answer');
+		var infoMessg = '';
 		if(answer){
-		g_form.setValue('u_author_book', answer);
+			var fullObjResp = JSON.parse(answer);
+			if(fullObjResp.author) {
+				g_form.setValue('u_author_book', fullObjResp.author);
+			}
+			if(fullObjResp.number){
+				g_form.clearMessages();
+				infoMessg += 'Looks like you have already an open Rental Request for the same book: ';
+				infoMessg += '</br><a target="_blank" href="' + fullObjResp.req_url + '" >' + fullObjResp.number + '</a> - You have requested the same book from ' + fullObjResp.reserved_from + ' till ' + fullObjResp.reserved_to + ' and your request is still active with status: ' + fullObjResp.state;
+				g_form.addInfoMessage(infoMessg);
+			}
 		}
-		
-	}
+}
 	
 
    //Type appropriate comment here, and begin script below
@@ -38,15 +50,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>150161b4dbd02300c6be5608689619f3</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Custom - Get Author</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Custom - Get Boook Data</sys_name>
         <sys_overrides/>
         <sys_package display_value="Rental Services" source="x_167023_rental_se">b09a00afdb086300c6be5608689619f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Rental Services">b09a00afdb086300c6be5608689619f1</sys_scope>
         <sys_update_name>sys_script_client_150161b4dbd02300c6be5608689619f3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-30 20:13:48</sys_updated_on>
+        <sys_updated_on>2018-09-30 17:18:12</sys_updated_on>
         <table>x_167023_rental_se_rental_request</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>86ded934dbd02300c6be5608689619ee</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Hide Author field onLoad</sys_name>
         <sys_overrides/>
         <sys_package display_value="Rental Services" source="x_167023_rental_se">b09a00afdb086300c6be5608689619f1</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Rental Services">b09a00afdb086300c6be5608689619f1</sys_scope>
         <sys_update_name>sys_ui_policy_86ded934dbd02300c6be5608689619ee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-30 20:25:16</sys_updated_on>
+        <sys_updated_on>2018-09-16 18:21:02</sys_updated_on>
         <table>x_167023_rental_se_rental_request</table>
         <ui_type>0</ui_type>
         <view/>

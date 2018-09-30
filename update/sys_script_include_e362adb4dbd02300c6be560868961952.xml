@@ -10,34 +10,50 @@
         <script><![CDATA[var BookUtilis = Class.create();
 BookUtilis.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
-	getAuthor: function() {
+	getBookData: function() {
+		var result = '';
+		var fullObj = {};
 		var book = this.getParameter('sysparm_book');
-		
 		var getBook = new GlideRecord('x_167023_rental_se_book');
 		getBook.get(book);
-		
 		if(getBook.u_author){
-			return  getBook.getValue('u_author');
-		} else {
-			return;
+			fullObj.author = getBook.getValue('u_author');
 		}
+		//Check if there are any active request for the book user is going  to rent
+		var getRentalRequest = new GlideRecord('x_167023_rental_se_rental_request');
+		//var encodedQuery = 'stateIN2,3,4^u_book=' + book;
+		var encodedQuery = 'stateIN2,3,4^assigned_to=' + gs.getUserID() + '^u_book=' + book;
+		getRentalRequest.addQuery(encodedQuery);
+		getRentalRequest.query();
+		if(getRentalRequest.next()) {
+			fullObj.number = getRentalRequest.getValue('number');
+			fullObj.reserved_from = getRentalRequest.getValue('work_start');
+			fullObj.reserved_to = getRentalRequest.getValue('work_end');
+			fullObj.state = getRentalRequest.getDisplayValue('state');
+			fullObj.req_url = getRentalRequest.getLink();
+		}
+		return this._jsonEncode(fullObj);
+		
 	},
 	
 	dateInFuture: function () {
 		var date_string = this.getParameter('sysparm_requested_from');
+		var reserved_to_string = this.getParameter('sysparm_requested_to');
 		if (!date_string){
 			return false;
 		}
 		
 		var req_from = new GlideDateTime();
 		req_from.setDisplayValue(date_string);
+		var req_to = new GlideDateTime();
+		req_to.setDisplayValue(reserved_to_string);
 		var current_date = new GlideDateTime();
 		var getDay = req_from.getDayOfWeekLocalTime();
 		
 		if(getDay == 6 || getDay == 7) {
 			return 'weekend';
-		} else {
-			return req_from.before(current_date);
+		} else if (req_from.before(current_date) || (req_to != '' && req_to.before(req_from))) {
+			return true;
 		}
 		
 	},
@@ -61,9 +77,10 @@ BookUtilis.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			
 			return this._jsonEncode(requestArray);	
 		},
+
 	
 		// Wrapper function for JSON encode
-		_jsonEncode: function(list) {
+	_jsonEncode: function(list) {
 			return new global.JSON().encode(list);
 		},
 		
@@ -73,13 +90,13 @@ BookUtilis.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-30 20:02:32</sys_created_on>
         <sys_id>e362adb4dbd02300c6be560868961952</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>BookUtilis</sys_name>
         <sys_package display_value="Rental Services" source="x_167023_rental_se">b09a00afdb086300c6be5608689619f1</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Rental Services">b09a00afdb086300c6be5608689619f1</sys_scope>
         <sys_update_name>sys_script_include_e362adb4dbd02300c6be560868961952</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-09-13 19:54:34</sys_updated_on>
+        <sys_updated_on>2018-09-30 17:00:43</sys_updated_on>
     </sys_script_include>
 </record_update>
